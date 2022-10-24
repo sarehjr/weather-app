@@ -1,0 +1,38 @@
+.btn.btn-outline-success {
+  color: #0f131a;
+  padding: 17px;
+  margin-top: 6px;
+  margin-left: 4px;
+  background: #b1e1ff;
+
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.btn.btn-outline-success:hover {
+  background-color: #0f131a;
+  color: #b1e1ff;
+}
+.container {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+p {
+  font-weight: 800;
+  color: #b1e1ff;
+}
+.card-body {
+  color: green;
+}
+img {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
