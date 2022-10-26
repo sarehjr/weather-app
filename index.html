@@ -12,53 +12,64 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-      
     <div class="container">
-      <div class="card mb-3 bg-dark" style="max-width: 1000px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="src/sky-clouds.jpg" class="img-fluid rounded-start" alt="..." width="100%"/>
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
           </div>
-        
-        <div class="col-md-5">
-          <div class="card-body">
-            <nav class="navbar bg-light">
-              <div class="container-fluid">
-                <form class="d-flex" id="search" role="search">
-                  <input
-                    class="form-control me-2 bg bg-light" id="city-search"
-                    type="search"
-                    placeholder="Search your own City..."
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
               </div>
-            </nav>
-            <h5 class="Tehran,Iran"></h5>
-            <h6 id="today">Today</h6>
-            <p class="card-text" id="degree">13℃<br />Mostly Cloudy</p>
-            <p class="card-text" id="current-city">Tehran,Iran</p>
-  
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="weekday">
-            sareh
-          </div>
-           
-          </div>
-        
       </div>
     </div>
     <script src="src/index.js"></script>
   </body>
 </html>
-
