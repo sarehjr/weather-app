@@ -1,4 +1,4 @@
-.btn.btn-outline-success {
+.form-control.btn.btn-primary.shadow-sm.w-100 {
   color: #014188;
   padding: 17px;
   margin-top: 6px;
@@ -8,29 +8,35 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font-weight: 800;
 }
-.btn.btn-outline-success:hover {
+.form-control.btn.btn-primary.shadow-sm.w-100:hover {
   background-color: #014188;
   color: #b1e1ff;
+}
+.btn.btn-success.w-100 {
+  color: #b1e1ff;
+  background: #014188;
+  padding: 17px;
+  margin-top: 6px;
+  margin-left: 4px;
+  font-weight: 800;
+}
+.btn.btn-success.w-100:hover {
+  color: #014188;
+  background: #b1e1ff;
 }
 .container {
   height: auto;
   width: 100%;
   margin: 0;
-  padding: 0;
-
-  display: block;
-  margin: 0 auto;
   margin-top: 50px;
 }
 p {
   font-weight: 800;
   color: #014188;
 }
-.card-body {
-  color: #212529;
-  font-weight: bold;
-}
+
 img {
   height: auto;
   width: 100%;
@@ -40,4 +46,29 @@ img {
 .col-6 {
   color: #014188;
   font-weight: 800;
+}
+.search-form {
+  color: #014188;
+}
+.temperature {
+  color: white;
+  font-weight: 800;
+  font-size: xx-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.units {
+  color: white;
+  font-weight: 800;
+  font-size: xx-large;
+}
+li {
+  color: #b1e1ff;
+  font-weight: 800;
+  font-size: x-large;
+  margin-top: 0auto;
+}
+h1 {
+  font-weight: 800;
+  color: white;
 }
